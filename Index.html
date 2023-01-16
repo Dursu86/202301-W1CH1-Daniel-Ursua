@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora HTML</title>
+    <link href='./Calculadora css.css' rel='stylesheet'>
+</head>
+
+<body>
+    <script src="Calculadora html.js" defer></script>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4" class="bar-op"><input class="visorOp" type="text" name="visorOp" value="" id="visorOp" readonly></th>
+                </tr>
+                <tr>
+                    <th colspan="4" class="visor"><input class="visorInput" type="text" name="visor" value=0 id="visor" readonly></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="characterCell">
+                    <td><button class="characterBt" onclick="cambiarVisor('ac')"> AC </button></td>
+                    <td><button class="characterBt"onclick="operation('+-')">&#x207a;&#x2044;&#x208b;</button></td>
+                    <td><button class="characterBt" onclick="operation('%')">%</button></td>
+                    <td><button class="characterBt"onclick="operation('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('7')"> 7 </button></td>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('8')"> 8 </button></td>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('9')"> 9 </button></td>
+                    <td class="characterCell"><button class="characterBt" id='x' onclick="operation('x')">X</button></td>
+                </tr>
+                <tr>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('4')"> 4 </button></td>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('5')"> 5 </button></td>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('6')"> 6 </button></td>
+                    <td class="characterCell"><button class="characterBt" id='-' onclick="operation('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('1')"> 1 </button></td>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('2')"> 2 </button></td>
+                    <td class="numsCell"><button class="numsBt" onclick="cambiarVisor('3')"> 3 </button></td>
+                    <td class="characterCell"><button class="characterBt"onclick="operation('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td class="numsCell" colspan="2"><button class="numsBt" onclick="cambiarVisor('0')"> 0 </button></td>
+                    <td class="characterCell"><button class="characterBt" onclick="cambiarVisor('.')">.</button></td>
+                    <td class="characterCell"><button class="characterBt" onclick="operation('=')">=</button></td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+
+</html>

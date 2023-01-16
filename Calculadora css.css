@@ -1,0 +1,98 @@
+body{
+    background-color: rgba(0, 255, 255, 0.281);
+}
+table{
+    border-collapse: collapse;
+    margin: 5% 40%;
+    width: 600px;
+    height: 600px;
+    border: 3px solid #fff;
+    vertical-align: middle;
+    box-shadow: 5px 5px 20px;
+}
+
+td, th {
+    padding: 0rem;
+    width: 85px;
+    height: 85px;
+  }
+th {
+    text-align: left;
+    border-bottom: black;
+    background-color: white;
+}
+td{
+    text-align: center;
+    border: 3px solid #fff;
+    background-color: white;
+}
+.bar-sup{
+    height: fit-content;
+}
+.bar-op{
+    height: fit-content;
+}
+.bar-sup, .visor, .visorInput, .visorOp, .bar-op{
+    color: white;
+    background-color: black;
+}
+.visor{
+    border-top: black;
+}
+.visorInput{
+    font-size: 3rem;
+    text-align: right;
+    border: 0;
+}
+.visorOp{
+    font-size: 2rem;
+    text-align: right;
+    border: 0;
+    width: 95%;
+}
+.characterCell{
+    border-radius: 0%;
+    border-color: white;
+}
+.characterBt{
+    background-color: #93c020;
+    color: white;
+    width:100%;
+    height: 100%;
+    border-color: transparent;
+    font-size: 2rem;
+}
+.characterBt:hover{
+    background-color: #92c020;
+    opacity: 80%;
+    border-color:#92c020
+}
+.characterBt.onclick{
+    background-color: #92c020;
+    opacity: 80%;
+}
+.numsBt:hover{
+    background-color: #ffb200;
+    opacity: 80%;
+}
+.numsCell{
+    border-radius: 0%;
+    border-color: white;    
+}
+.numsBt{
+    background-color: #ffb200;
+    color: white;
+    font-size: 2rem;
+    width:100%;
+    height: 100%;
+    border-color: transparent;    
+}
+.numsBt:hover{
+    background-color:#ffb200;
+    opacity: 80%;
+    border-color: #ffb200;
+}
+.numsBt.onclick{
+    background-color: #ffb200;
+    opacity: 80%;
+}
